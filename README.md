@@ -1,4 +1,8 @@
-# Bluetooth Audio for Arduino
+# Bluetooth Audio for Arduino platform on on PlatformIO
+
+Forked from [https://github.com/tierneytim/btAudio](https://github.com/tierneytim/btAudio).
+Many thanks to all the authors and contributors !!!
+
 The code exposes the A2DP profile (Bluetooth Audio) available in ESP32 boards using the Arduino interface. It assumes you have installed the [ESP32 core](https://github.com/espressif/arduino-esp32) for Arduino and have an ESP32 board. I quite like the [TinyPico](https://www.tinypico.com/) because it's so powerful and so tiny! I also like the [ESP32-PICO-KIT](https://www.mouser.co.uk/ProductDetail/Espressif-Systems/ESP32-PICO-KIT?qs=MLItCLRbWsyoLrlknFRqcQ%3D%3D&vip=1&gclid=EAIaIQobChMImN2EgKTG6QIVWbvVCh0zcAPBEAQYASABEgK0kfD_BwE) because it's so powerful and cheap. Both have the same chips (i think) but the TinyPico is way smaller. 
 
 
@@ -23,7 +27,13 @@ The code exposes the A2DP profile (Bluetooth Audio) available in ESP32 boards us
 
 
 <a name="a"></a>
-## Installation
+## Installation on PlatformIO
+1. Choose `PIO Home` -> `Libraries` -> `Registry`
+2. Type `btAudio` into the search box.
+3. Click the row to select the library.
+4. Click the `Install` button to install the library.
+
+## Installation on Arduino IDE
 1. [Install the Arduino IDE](https://www.arduino.cc/en/main/software)
 2. [Install the ESP32 core for Arduino](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
 3. [Download this repository](https://github.com/tierneytim/btAudio/archive/refs/heads/master.zip)
