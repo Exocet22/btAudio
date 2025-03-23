@@ -47,6 +47,7 @@ class btAudio {
 	void updateMeta();
 	
 	
+	static bool hasClient;
 	float _T=60.0;
 	float _alphAtt=0.001;
 	float _alphRel=0.1; 

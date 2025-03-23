@@ -3,6 +3,8 @@
 ////////////////////////////////////////////////////////////////////
 ////////////// Nasty statics for i2sCallback ///////////////////////
 ////////////////////////////////////////////////////////////////////
+ bool btAudio::hasClient=false;
+
  float btAudio::_vol=0.95;
  esp_bd_addr_t btAudio::_address;
  int32_t btAudio::_sampleRate=44100;
@@ -102,6 +104,9 @@ void btAudio::a2d_cb(esp_a2d_cb_event_t event, esp_a2d_cb_param_t*param){
 	switch (event) {
     case ESP_A2D_CONNECTION_STATE_EVT:
     {
+        // Update connection status
+        hasClient = (a2d->conn_stat.state == ESP_A2D_CONNECTION_STATE_CONNECTED);
+      
         uint8_t* temp= a2d->conn_stat.remote_bda;
         if (a2d->conn_stat.state == ESP_A2D_CONNECTION_STATE_CONNECTED)
         {
