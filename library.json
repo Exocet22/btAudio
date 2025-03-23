@@ -1,6 +1,6 @@
 {
   "name": "btAudio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "High level interface to the Advanced Audio Distribution Profile (A2DP) available in ESP32 boards.",
   "keywords": "audio,bluetooth,A2DP,arduino,esp32",
   "repository":
